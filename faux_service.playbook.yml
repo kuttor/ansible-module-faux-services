@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  remote_user: local
+  tasks:
+    - name: Create Apache copy cat service
+      faux_service:
+        name: apachectl
+        path: /tmp/apache
+
